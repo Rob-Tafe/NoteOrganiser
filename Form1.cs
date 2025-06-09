@@ -8,13 +8,66 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.IO;
+
+
 namespace NoteOrganiser
 {
-    public partial class Form1 : Form
+    public partial class NoteOrganiser : Form
     {
-        public Form1()
+        public NoteOrganiser()
         {
             InitializeComponent();
+        }
+
+        private void BtnOpen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openTxtFile = new OpenFileDialog();
+            openTxtFile.Title = "Open Text file";
+            openTxtFile.Filter = "Text files|*.txt";
+            openTxtFile.InitialDirectory = @"D:\Programs\Visual Studio Projects\NoteOrganiser\Notes Folder";
+
+            if (openTxtFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    ReadNote(openTxtFile.FileName);
+                }
+                catch
+                {
+                    MessageBox.Show("Error, unable to load file.", "Error");
+                    return;
+                }
+            }
+        }
+
+        private void ReadNote(string readFilePath)
+        {
+            if (File.Exists(readFilePath))
+            {
+                string fileContent = File.ReadAllText(readFilePath);
+
+                using (StreamReader readFile = new StreamReader(readFilePath))
+                {
+                    RtbNoteMain.Text = File.ReadAllText(readFilePath);
+                }
+            }
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WriteNote(string writeFilePath)
+        {
+            string rtbText = RtbNoteMain.Text;
+
+            using (StreamWriter writeFile = new StreamWriter(writeFilePath)
+            {
+                
+                writeFile.Write(rtbText);
+            }
         }
     }
 }

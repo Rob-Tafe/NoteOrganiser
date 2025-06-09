@@ -1,6 +1,6 @@
 ﻿namespace NoteOrganiser
 {
-    partial class Form1
+    partial class NoteOrganiser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.BtnOpen = new System.Windows.Forms.Button();
+            this.BtnSave = new System.Windows.Forms.Button();
+            this.RtbNoteMain = new System.Windows.Forms.RichTextBox();
+            this.SuspendLayout();
+            // 
+            // BtnOpen
+            // 
+            this.BtnOpen.Location = new System.Drawing.Point(10, 10);
+            this.BtnOpen.Name = "BtnOpen";
+            this.BtnOpen.Size = new System.Drawing.Size(60, 40);
+            this.BtnOpen.TabIndex = 0;
+            this.BtnOpen.Text = "Open";
+            this.BtnOpen.UseVisualStyleBackColor = true;
+            this.BtnOpen.Click += new System.EventHandler(this.BtnOpen_Click);
+            // 
+            // BtnSave
+            // 
+            this.BtnSave.Location = new System.Drawing.Point(100, 10);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(60, 40);
+            this.BtnSave.TabIndex = 1;
+            this.BtnSave.Text = "Save";
+            this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            // 
+            // RtbNoteMain
+            // 
+            this.RtbNoteMain.Location = new System.Drawing.Point(10, 70);
+            this.RtbNoteMain.Name = "RtbNoteMain";
+            this.RtbNoteMain.Size = new System.Drawing.Size(400, 400);
+            this.RtbNoteMain.TabIndex = 4;
+            this.RtbNoteMain.Text = "";
+            // 
+            // NoteOrganiser
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(419, 481);
+            this.Controls.Add(this.RtbNoteMain);
+            this.Controls.Add(this.BtnSave);
+            this.Controls.Add(this.BtnOpen);
+            this.Name = "NoteOrganiser";
+            this.Text = "NoteOrganiser";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button BtnOpen;
+        private System.Windows.Forms.Button BtnSave;
+        private System.Windows.Forms.RichTextBox RtbNoteMain;
     }
 }
 
