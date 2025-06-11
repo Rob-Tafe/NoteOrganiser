@@ -22,10 +22,14 @@ namespace NoteOrganiser
 
         private void BtnOpen_Click(object sender, EventArgs e)
         {
+            string filePathRel = @"..\..\Notes Folder\";
+            string filePathFull = Path.GetFullPath(Path.Combine(Application.StartupPath, filePathRel));
+            
+
             OpenFileDialog openTxtFile = new OpenFileDialog();
             openTxtFile.Title = "Open Text file";
             openTxtFile.Filter = "Text files|*.txt";
-            openTxtFile.InitialDirectory = @"D:\Programs\Visual Studio Projects\NoteOrganiser\Notes Folder";
+            openTxtFile.InitialDirectory = filePathFull;
 
             if (openTxtFile.ShowDialog() == DialogResult.OK)
             {
@@ -63,11 +67,11 @@ namespace NoteOrganiser
         {
             string rtbText = RtbNoteMain.Text;
 
-            using (StreamWriter writeFile = new StreamWriter(writeFilePath)
-            {
+            //using (StreamWriter writeFile = new StreamWriter(writeFilePath)
+            //{
                 
-                writeFile.Write(rtbText);
-            }
+            //    writeFile.Write(rtbText);
+            //}
         }
     }
 }
