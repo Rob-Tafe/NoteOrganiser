@@ -49,8 +49,6 @@ namespace NoteOrganiser
         {
             if (File.Exists(readFilePath))
             {
-                string fileContent = File.ReadAllText(readFilePath);
-
                 using (StreamReader readFile = new StreamReader(readFilePath))
                 {
                     RtbNoteMain.Text = File.ReadAllText(readFilePath);
