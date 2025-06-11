@@ -67,8 +67,5 @@ namespace NoteOrganiser
             //using (StreamWriter writeFile = new StreamWriter(writeFilePath)
             //{
                 
-            //    writeFile.Write(rtbText);
-            //}
-        }
     }
 }
