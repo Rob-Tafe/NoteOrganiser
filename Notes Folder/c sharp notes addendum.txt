@@ -1,0 +1,9 @@
+should be able to read and write from file
+text files
+should be able to display the text from a text file
+able to modify text
+
+also methods.
+lots of methods.
+so many methods.
+like, you have no idea just how many methods.
