@@ -11,8 +11,11 @@ using System.Windows.Forms;
 using System.IO;
 
 
+
 namespace NoteOrganiser
 {
+
+
     public partial class NoteOrganiser : Form
     {
 
@@ -34,7 +37,8 @@ namespace NoteOrganiser
         }
 
 
-
+        // This is the method that is responsible for reading a text file and
+        // sending its contents to the RtbNoteMain rich textbox.
         private void ReadNote(string readFilePath)
         {
             if (File.Exists(readFilePath))
@@ -47,7 +51,8 @@ namespace NoteOrganiser
         }
 
 
-
+        // This method allows a user to open a text file for reading and
+        // modifying. It calls the ReadNote method.
         private void BtnOpen_Click(object sender, EventArgs e)
         {
             OpenFileDialog openTxtFile = new OpenFileDialog();
@@ -70,7 +75,8 @@ namespace NoteOrganiser
         }
 
 
-
+        // This method is responsible for writing the contents of the RtbNoteMain
+        // rich textbox to a text file.
         private void WriteNote(string writeFilePath)
         {
             string rtbText = RtbNoteMain.Text;
@@ -82,7 +88,8 @@ namespace NoteOrganiser
         }
 
 
-
+        // This method allows a user to save the contents of the RtbNoteMain rich
+        // textbox to a text file. It calls the WriteNote method.
         private void BtnSave_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveTxtFile = new SaveFileDialog();
