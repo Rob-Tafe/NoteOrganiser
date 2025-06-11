@@ -1,0 +1,4 @@
+should be able to read and write from file
+text files
+should be able to display the text from a text file
+able to modify text
