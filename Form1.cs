@@ -25,7 +25,6 @@ namespace NoteOrganiser
             string filePathRel = @"..\..\Notes Folder\";
             string filePathFull = Path.GetFullPath(Path.Combine(Application.StartupPath, filePathRel));
             
-
             OpenFileDialog openTxtFile = new OpenFileDialog();
             openTxtFile.Title = "Open Text file";
             openTxtFile.Filter = "Text files|*.txt";
