@@ -17,7 +17,6 @@ namespace NoteOrganiser
     {
 
 
-
         public NoteOrganiser()
         {
             InitializeComponent();
@@ -107,7 +106,6 @@ namespace NoteOrganiser
                 }
             }
         }
-
 
 
     }
