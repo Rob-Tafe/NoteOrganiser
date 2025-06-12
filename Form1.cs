@@ -81,10 +81,6 @@ namespace NoteOrganiser
         {
             string rtbText = RtbNoteMain.Text;
 
-            using (StreamWriter writeFile = new StreamWriter(writeFilePath))
-            {
-                writeFile.Write(rtbText, writeFilePath);
-            }
         }
 
 
