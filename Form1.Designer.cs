@@ -35,10 +35,11 @@
             // 
             // BtnOpen
             // 
-            this.BtnOpen.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnOpen.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnOpen.Location = new System.Drawing.Point(10, 10);
+            this.BtnOpen.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BtnOpen.Name = "BtnOpen";
-            this.BtnOpen.Size = new System.Drawing.Size(60, 40);
+            this.BtnOpen.Size = new System.Drawing.Size(80, 40);
             this.BtnOpen.TabIndex = 0;
             this.BtnOpen.Text = "Open";
             this.BtnOpen.UseVisualStyleBackColor = true;
@@ -46,10 +47,11 @@
             // 
             // BtnSave
             // 
-            this.BtnSave.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSave.Location = new System.Drawing.Point(100, 10);
+            this.BtnSave.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSave.Location = new System.Drawing.Point(120, 10);
+            this.BtnSave.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(60, 40);
+            this.BtnSave.Size = new System.Drawing.Size(80, 40);
             this.BtnSave.TabIndex = 1;
             this.BtnSave.Text = "Save";
             this.BtnSave.UseVisualStyleBackColor = true;
@@ -57,22 +59,28 @@
             // 
             // RtbNote
             // 
+            this.RtbNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.RtbNote.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RtbNote.Location = new System.Drawing.Point(10, 70);
+            this.RtbNote.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.RtbNote.Name = "RtbNote";
-            this.RtbNote.Size = new System.Drawing.Size(600, 500);
+            this.RtbNote.Size = new System.Drawing.Size(785, 530);
             this.RtbNote.TabIndex = 4;
             this.RtbNote.Text = "";
             this.RtbNote.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AutoNewLine);
             // 
             // NoteOrganiser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 581);
+            this.ClientSize = new System.Drawing.Size(804, 611);
             this.Controls.Add(this.RtbNote);
             this.Controls.Add(this.BtnSave);
             this.Controls.Add(this.BtnOpen);
+            this.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "NoteOrganiser";
             this.Text = "NoteOrganiser";
             this.ResumeLayout(false);

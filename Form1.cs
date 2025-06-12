@@ -126,7 +126,7 @@ namespace NoteOrganiser
 
             int currLineCursorIndex = cursorIndex - currLineStart;
 
-            if ((currLineCursorIndex >= 70) && (e.KeyCode == Keys.Space))
+            if ((currLineCursorIndex >= 90) && (e.KeyCode == Keys.Space))
             {
                 MessageBox.Show("Here!");
             }
