@@ -69,7 +69,6 @@
             this.RtbNote.Size = new System.Drawing.Size(785, 530);
             this.RtbNote.TabIndex = 4;
             this.RtbNote.Text = "";
-            this.RtbNote.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AutoNewLine);
             // 
             // NoteOrganiser
             // 
