@@ -30,7 +30,7 @@
         {
             this.BtnOpen = new System.Windows.Forms.Button();
             this.BtnSave = new System.Windows.Forms.Button();
-            this.RtbNoteMain = new System.Windows.Forms.RichTextBox();
+            this.RtbNote = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // BtnOpen
@@ -55,21 +55,22 @@
             this.BtnSave.UseVisualStyleBackColor = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
-            // RtbNoteMain
+            // RtbNote
             // 
-            this.RtbNoteMain.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RtbNoteMain.Location = new System.Drawing.Point(10, 70);
-            this.RtbNoteMain.Name = "RtbNoteMain";
-            this.RtbNoteMain.Size = new System.Drawing.Size(600, 500);
-            this.RtbNoteMain.TabIndex = 4;
-            this.RtbNoteMain.Text = "";
+            this.RtbNote.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RtbNote.Location = new System.Drawing.Point(10, 70);
+            this.RtbNote.Name = "RtbNote";
+            this.RtbNote.Size = new System.Drawing.Size(600, 500);
+            this.RtbNote.TabIndex = 4;
+            this.RtbNote.Text = "";
+            this.RtbNote.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AutoNewLine);
             // 
             // NoteOrganiser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(619, 581);
-            this.Controls.Add(this.RtbNoteMain);
+            this.Controls.Add(this.RtbNote);
             this.Controls.Add(this.BtnSave);
             this.Controls.Add(this.BtnOpen);
             this.Name = "NoteOrganiser";
@@ -82,7 +83,7 @@
 
         private System.Windows.Forms.Button BtnOpen;
         private System.Windows.Forms.Button BtnSave;
-        private System.Windows.Forms.RichTextBox RtbNoteMain;
+        private System.Windows.Forms.RichTextBox RtbNote;
     }
 }
 

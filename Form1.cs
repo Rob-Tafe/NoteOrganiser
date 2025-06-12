@@ -38,14 +38,14 @@ namespace NoteOrganiser
 
 
         // This is the method that is responsible for reading a text file and
-        // sending its contents to the RtbNoteMain rich textbox.
+        // sending its contents to the RtbNote rich textbox.
         private void ReadNote(string readFilePath)
         {
             if (File.Exists(readFilePath))
             {
                 using (StreamReader readFile = new StreamReader(readFilePath))
                 {
-                    RtbNoteMain.Text = File.ReadAllText(readFilePath);
+                    RtbNote.Text = File.ReadAllText(readFilePath);
                 }
             }
         }
@@ -75,11 +75,11 @@ namespace NoteOrganiser
         }
 
 
-        // This method is responsible for writing the contents of the RtbNoteMain
+        // This method is responsible for writing the contents of the RtbNote
         // rich textbox to a text file.
         private void WriteNote(string writeFilePath)
         {
-            string rtbText = RtbNoteMain.Text;
+            string rtbText = RtbNote.Text;
 
             using (StreamWriter writeFile = new StreamWriter(writeFilePath))
             {
@@ -88,7 +88,7 @@ namespace NoteOrganiser
         }
 
 
-        // This method allows a user to save the contents of the RtbNoteMain rich
+        // This method allows a user to save the contents of the RtbNote rich
         // textbox to a text file. It calls the WriteNote method.
         private void BtnSave_Click(object sender, EventArgs e)
         {
@@ -111,6 +111,24 @@ namespace NoteOrganiser
                     MessageBox.Show("Error, unable to save file.", "Error (BtnSave_Click Method)");
                     return;
                 }
+            }
+        }
+
+
+        // AutoNewLine method. This method will automatically add line break when
+        // the user has reached a specific length on a line, and only when the user
+        // presses the spacebar.
+        private void AutoNewLine(object sender, KeyEventArgs e)
+        {
+            int cursorIndex = RtbNote.SelectionStart;
+            int cursorCurrLine = RtbNote.GetLineFromCharIndex(cursorIndex);
+            int currLineStart = RtbNote.GetFirstCharIndexFromLine(cursorCurrLine);
+
+            int currLineCursorIndex = cursorIndex - currLineStart;
+
+            if ((currLineCursorIndex >= 70) && (e.KeyCode == Keys.Space))
+            {
+                MessageBox.Show("Here!");
             }
         }
 
