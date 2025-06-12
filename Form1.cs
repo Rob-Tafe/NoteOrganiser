@@ -26,7 +26,7 @@ namespace NoteOrganiser
         }
 
 
-        // This method generates a consistent file path forInitialDirectory
+        // This method generates a consistent file path for InitialDirectory
         // to use. This method is called by BtnOpen and BtnSave.
         private string GetFilePath()
         {
@@ -81,6 +81,10 @@ namespace NoteOrganiser
         {
             string rtbText = RtbNoteMain.Text;
 
+            using (StreamWriter writeFile = new StreamWriter(writeFilePath))
+            {
+                writeFile.Write(rtbText, writeFilePath);
+            }
         }
 
 

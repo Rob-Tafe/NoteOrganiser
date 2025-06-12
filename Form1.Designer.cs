@@ -35,6 +35,7 @@
             // 
             // BtnOpen
             // 
+            this.BtnOpen.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnOpen.Location = new System.Drawing.Point(10, 10);
             this.BtnOpen.Name = "BtnOpen";
             this.BtnOpen.Size = new System.Drawing.Size(60, 40);
@@ -45,6 +46,7 @@
             // 
             // BtnSave
             // 
+            this.BtnSave.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSave.Location = new System.Drawing.Point(100, 10);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(60, 40);
@@ -55,9 +57,10 @@
             // 
             // RtbNoteMain
             // 
+            this.RtbNoteMain.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RtbNoteMain.Location = new System.Drawing.Point(10, 70);
             this.RtbNoteMain.Name = "RtbNoteMain";
-            this.RtbNoteMain.Size = new System.Drawing.Size(400, 400);
+            this.RtbNoteMain.Size = new System.Drawing.Size(600, 500);
             this.RtbNoteMain.TabIndex = 4;
             this.RtbNoteMain.Text = "";
             // 
@@ -65,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 481);
+            this.ClientSize = new System.Drawing.Size(619, 581);
             this.Controls.Add(this.RtbNoteMain);
             this.Controls.Add(this.BtnSave);
             this.Controls.Add(this.BtnOpen);
