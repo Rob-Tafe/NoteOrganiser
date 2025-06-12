@@ -34,7 +34,7 @@ namespace NoteOrganiser
             string filePathFull = Path.GetFullPath(Path.Combine(Application.StartupPath, filePathRel));
 
             return filePathFull;
-        }
+        } // End of GetFilePath method.
 
 
         // This is the method that is responsible for reading a text file and
@@ -48,7 +48,7 @@ namespace NoteOrganiser
                     RtbNote.Text = File.ReadAllText(readFilePath);
                 }
             }
-        }
+        } // End of ReadNote method.
 
 
         // This method allows a user to open a text file for reading and
@@ -72,7 +72,7 @@ namespace NoteOrganiser
                     return;
                 }
             }
-        }
+        } // End of BtnOpen method.
 
 
         // This method is responsible for writing the contents of the RtbNote
@@ -85,7 +85,7 @@ namespace NoteOrganiser
             {
                 writeFile.Write(rtbText, writeFilePath);
             }
-        }
+        } // End of WriteNote method.
 
 
         // This method allows a user to save the contents of the RtbNote rich
@@ -101,7 +101,7 @@ namespace NoteOrganiser
 
             if (saveTxtFile.ShowDialog() == DialogResult.OK)
             {
-                string fileName = saveTxtFile.FileName;
+                
                 try
                 {
                     WriteNote(saveTxtFile.FileName);
@@ -112,13 +112,13 @@ namespace NoteOrganiser
                     return;
                 }
             }
-        }
+        } // End of BtnSave method.
 
 
         // AutoNewLine method. This method will automatically add line break when
         // the user has reached a specific length on a line, and only when the user
         // presses the spacebar.
-        private void AutoNewLine(object sender, KeyEventArgs e)
+        private void AutoNewLine(object sender, KeyPressEventArgs e)
         {
             int cursorIndex = RtbNote.SelectionStart;
             int cursorCurrLine = RtbNote.GetLineFromCharIndex(cursorIndex);
@@ -126,11 +126,12 @@ namespace NoteOrganiser
 
             int currLineCursorIndex = cursorIndex - currLineStart;
 
-            if ((currLineCursorIndex >= 90) && (e.KeyCode == Keys.Space))
+            if ((currLineCursorIndex >= 90) && (e.KeyChar == ' '))
             {
-                MessageBox.Show("Here!");
+                SendKeys.Send("{BackSpace}");
+                SendKeys.Send("{Enter}");
             }
-        }
+        } // End of AutoNewLine method.
 
 
     }
