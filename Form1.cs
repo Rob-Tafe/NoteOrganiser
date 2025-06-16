@@ -98,8 +98,6 @@ namespace NoteOrganiser
             saveTextFile.Filter = "Text files|*.txt";
             saveTextFile.InitialDirectory = GetFilePath();
 
-            saveTextFile.FileName = "Note.txt";
-
             if (saveTextFile.ShowDialog() == DialogResult.OK)
             {
                 
