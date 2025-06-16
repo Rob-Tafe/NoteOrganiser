@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.IO;
+using System.Runtime.Remoting.Messaging;
 
 
 
@@ -55,16 +56,16 @@ namespace NoteOrganiser
         // modifying. It calls the ReadNote method.
         private void BtnOpen_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openTxtFile = new OpenFileDialog();
-            openTxtFile.Title = "Open Text file";
-            openTxtFile.Filter = "Text files|*.txt";
-            openTxtFile.InitialDirectory = GetFilePath();
+            OpenFileDialog openTextFile = new OpenFileDialog();
+            openTextFile.Title = "Open Text file";
+            openTextFile.Filter = "Text files|*.txt";
+            openTextFile.InitialDirectory = GetFilePath();
 
-            if (openTxtFile.ShowDialog() == DialogResult.OK)
+            if (openTextFile.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                    ReadNote(openTxtFile.FileName);
+                    ReadNote(openTextFile.FileName);
                 }
                 catch
                 {
@@ -92,19 +93,19 @@ namespace NoteOrganiser
         // textbox to a text file. It calls the WriteNote method.
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveTxtFile = new SaveFileDialog();
-            saveTxtFile.Title = "Save Text file";
-            saveTxtFile.Filter = "Text files|*.txt";
-            saveTxtFile.InitialDirectory = GetFilePath();
+            SaveFileDialog saveTextFile = new SaveFileDialog();
+            saveTextFile.Title = "Save Text file";
+            saveTextFile.Filter = "Text files|*.txt";
+            saveTextFile.InitialDirectory = GetFilePath();
 
-            saveTxtFile.FileName = "Note.txt";
+            saveTextFile.FileName = "Note.txt";
 
-            if (saveTxtFile.ShowDialog() == DialogResult.OK)
+            if (saveTextFile.ShowDialog() == DialogResult.OK)
             {
                 
                 try
                 {
-                    WriteNote(saveTxtFile.FileName);
+                    WriteNote(saveTextFile.FileName);
                 }
                 catch
                 {
@@ -126,12 +127,24 @@ namespace NoteOrganiser
 
             int currLineCursorIndex = cursorIndex - currLineStart;
 
-            if ((currLineCursorIndex >= 90) && (e.KeyChar == ' '))
+            if ((currLineCursorIndex >= 89) && (e.KeyChar == ' '))
             {
                 SendKeys.Send("{BackSpace}");
                 SendKeys.Send("{Enter}");
             }
         } // End of AutoNewLine method.
+
+
+        // Save shortcut method. This method should save the current file when the hotkey combo
+        // 'Ctrl' + 'S' is pressed.
+        private void HotkeySave(object sender, KeyEventArgs e)
+        {
+            string fileNameForHkSave = "Default HK Save.txt";
+
+            if ((e.Control) && (e.KeyCode == Keys.S)) {
+                MessageBox.Show("Key combo working!");
+            }
+        }
 
 
     }

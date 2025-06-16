@@ -1,0 +1,42 @@
+Weapon system idea
+
+The basic premise behind this idea is that I don't want a weapon based character to just use
+the 'attack' option every time they want to use their weapon. I want them to use a specific
+technique of their choice, from several options of techniques.
+
+The most basic concept of this system would be choosing between a 'swing' or a 'thrust'. Where
+a swing might do more damage overall, a thrust may provide additional armour penetration to
+the attack, so you could vary how you attack an enemy based on the armour or percieved defenses.
+
+Environment may play a role when deciding which attack to use. For example, in a small, tight
+space you might not have the space required to reliably swing a weapon without hitting a wall or
+piece of furnature, and so a thrust may be a better option to attack reliably.
+
+Different weapon types would have different attack options. For example, a mace might not
+have a thrust option, but would perhaps have an 'overhead swing' and an 'upwards swing', in
+addition to their regular swing attack. Whereas a longsword might have thrust, 'diagonal
+cut', and 'vertical cut' attacks.
+
+
+
+An alternate melee combat idea
+
+The user can set which 'guard' or 'stance' they are in with their weapon, with each guard/stance
+determining what attacks the user will perform in their attack chains. The general idea being
+that you can change stances on the fly to change up your attack style, while not having to
+select which attack to perform for every single attack action. The upside to this is that
+a user only needs one button to perform their various attacks. The downside to this is that
+attack chains become predictable, as they are a fixed chain, as opposed to making up your
+own attack chain on the fly via choosing individual attacks - although this would only be
+a real issue if player vs player was a part of this system. Using German longsword
+fencing as a base, the basic guard would be Vom Tag, which is a basic moveset that hits a
+little harder than other guards, but is also a bit slower with attack animations. The Ox guard
+might have a quick horizontal swing for its third attack, Pflug might have a longer range
+thrust attack than other thrusts, and Alber's attack chain might have a very slow second attack
+that hits very hard. Each guard should also have varying stamina costs for the attacks in
+their attack chains, specifically, the 'special' attack in each chain should be more costly
+as it represents a the more powerful or unique attack option.
+
+
+The player should start with a single guard, but be able to find Manuals to unlock other guards
+as they progress.
