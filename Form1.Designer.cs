@@ -31,6 +31,7 @@
             this.BtnOpen = new System.Windows.Forms.Button();
             this.BtnSave = new System.Windows.Forms.Button();
             this.RtbNote = new System.Windows.Forms.RichTextBox();
+            this.TbStatus = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // BtnOpen
@@ -72,11 +73,20 @@
             this.RtbNote.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HotkeySave);
             this.RtbNote.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AutoNewLine);
             // 
+            // TbStatus
+            // 
+            this.TbStatus.Location = new System.Drawing.Point(695, 40);
+            this.TbStatus.Name = "TbStatus";
+            this.TbStatus.ReadOnly = true;
+            this.TbStatus.Size = new System.Drawing.Size(100, 21);
+            this.TbStatus.TabIndex = 5;
+            // 
             // NoteOrganiser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 611);
+            this.Controls.Add(this.TbStatus);
             this.Controls.Add(this.RtbNote);
             this.Controls.Add(this.BtnSave);
             this.Controls.Add(this.BtnOpen);
@@ -85,6 +95,7 @@
             this.Name = "NoteOrganiser";
             this.Text = "NoteOrganiser";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -93,6 +104,7 @@
         private System.Windows.Forms.Button BtnOpen;
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.RichTextBox RtbNote;
+        private System.Windows.Forms.TextBox TbStatus;
     }
 }
 

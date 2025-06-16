@@ -27,6 +27,12 @@ namespace NoteOrganiser
         }
 
 
+        // Global variables.
+        string selectedFileNameMemory = "";
+
+        // End of Global variables.
+
+
         // This method generates a consistent file path for InitialDirectory
         // to use. This method is called by BtnOpen and BtnSave.
         private string GetFilePath()
@@ -36,6 +42,13 @@ namespace NoteOrganiser
 
             return filePathFull;
         } // End of GetFilePath method.
+
+
+        // FileNameMemory method. This method will remember the name of the last file you saved or opened.
+        private string FileNameMemory()
+        {
+                return selectedFileNameMemory;
+        }
 
 
         // This is the method that is responsible for reading a text file and
@@ -65,7 +78,10 @@ namespace NoteOrganiser
             {
                 try
                 {
+                    selectedFileNameMemory = openTextFile.FileName;
+                    openTextFile.FileName = FileNameMemory();
                     ReadNote(openTextFile.FileName);
+                    TbStatus.Text = "Loaded";
                 }
                 catch
                 {
@@ -84,7 +100,14 @@ namespace NoteOrganiser
 
             using (StreamWriter writeFile = new StreamWriter(writeFilePath))
             {
+                string fileName = FileNameMemory();
+
+                if (string.IsNullOrEmpty(fileName))
+                {
+                    fileName = "Note.txt";
+                }
                 writeFile.Write(rtbText, writeFilePath);
+                TbStatus.Text = "Saved";
             }
         } // End of WriteNote method.
 
@@ -103,6 +126,8 @@ namespace NoteOrganiser
                 
                 try
                 {
+                    selectedFileNameMemory = saveTextFile.FileName;
+                    saveTextFile.FileName = FileNameMemory();
                     WriteNote(saveTextFile.FileName);
                 }
                 catch
@@ -137,15 +162,22 @@ namespace NoteOrganiser
         // 'Ctrl' + 'S' is pressed.
         private void HotkeySave(object sender, KeyEventArgs e)
         {
-            string fileNameForHkSave = "Default HK Save.txt";
+            //string fileNameForHkSave = "DefaultNote.txt";
 
-            if ((e.Control) && (e.KeyCode == Keys.S)) {
-                MessageBox.Show("Key combo working!");
+            if (e.Modifiers == Keys.Control && e.KeyCode == Keys.S) {
+                if (!(string.IsNullOrEmpty(FileNameMemory())))
+                {
+                    WriteNote(FileNameMemory());
+                }
+                else
+                {
+                    MessageBox.Show("No file loaded or saved this session.");
+                }
             }
-        }
+        } // End of HotkeySave method.
 
 
-    }
+    } // End of NoteOrganiser : Form class.
 
 
-}
+} // End of NoteOrganiser namespace.
