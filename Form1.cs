@@ -150,7 +150,7 @@ namespace NoteOrganiser
 
             int currLineCursorIndex = cursorIndex - currLineStart;
 
-            if ((currLineCursorIndex >= 89) && (e.KeyChar == ' '))
+            if ((currLineCursorIndex >= 88) && (e.KeyChar == ' '))
             {
                 SendKeys.Send("{BackSpace}");
                 SendKeys.Send("{Enter}");

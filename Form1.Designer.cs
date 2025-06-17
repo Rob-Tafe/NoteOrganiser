@@ -63,6 +63,7 @@
             this.RtbNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.RtbNote.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.RtbNote.Font = new System.Drawing.Font("Lucida Console", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RtbNote.Location = new System.Drawing.Point(10, 70);
             this.RtbNote.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -85,6 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(804, 611);
             this.Controls.Add(this.TbStatus);
             this.Controls.Add(this.RtbNote);

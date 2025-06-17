@@ -44,6 +44,9 @@ four?) individual cards of their choosing at each level-up (or other significant
 in the progression system) in order to give them much greater control over what spell &
 resource cards they have access to.
 
+The spellcaster will have to find spell cards to add to their deck, but should start with the 
+'Resource' cards (or at least some of them).
+
 
 All spent cards (spells and resources) will be restored once a significant period of
 rest is completed (no idea atm, spells are too powerful to have them restored after a

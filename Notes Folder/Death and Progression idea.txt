@@ -1,0 +1,18 @@
+Death/checkpoint/Progression idea
+
+Safe rooms should be the equivelant to the 'sites of grace' from Elden Ring, or the 'bonfires'
+from Dark Souls. A safe room should be a small room with a bed of some sort, and a few other
+common elements such as a trunk (to store excess gear) a desk for the main character to attune
+to different magic/skills/other character build-related options. It should also have a candle
+or a lantern, that, when lit, 'activates' the safe house, similar to setting the last grace
+visited in Elden Ring.
+
+If the main character should perish, they will wake up in the last safe house that was activated
+without any of their 'Memories'. There will not be any "You Died" text at the time of death,
+but when the main character respawns, they will be text along the lines of "Another Bad Dream"
+or "Another Nightmare to shake off" or "Wake up, Quickly!" (The idea is to be a slightly more  motivational 'death phrase', to avoid focusing on the player on the negative, and to get the
+player to keep pushing onwards).
+
+Memories - The equivelant to souls & runes. if the main character dies, they will drop them
+on the ground where they died.
+

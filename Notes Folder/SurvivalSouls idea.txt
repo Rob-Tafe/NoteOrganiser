@@ -6,3 +6,26 @@ mountain range that travels onwards to the southwest. The mountain range opens u
 to the north east, where the terrain becomes open fields and forests, littered with towns
 and farmland, with the occasional keep and even a fortress or two. Beyond this seemingly idyllic
 landscape lies a great ocean, wracked by powerful winds.
+
+The primary focus of this setting is the castle itself, navigating its hallways & environs,
+fighting off the enemies that infest each sub-area, scavenging for resources, finding clues
+to further the plot and help locate more significant items of value, solving puzzles, and
+defeating bosses.
+
+The general atmosphere or 'feel' of the castle is to be cold, dark and lonely. It should emphasise that the main character is on their own, and that this castle, which used to be
+inhabited (long ago? not so long ago?) is now devoid of (non-hostile) life.
+
+The intention is to have the castle be very large, not quite maze-like, but fairly difficult
+to traverse (at least initially). There should be shortcuts that can be unlocked to aid quick
+navigation, but no 'one way streets' - you should always be able to back-track. There will
+also be areas outside of the castle, in the walled in town that is built up around the castle.
+
+I also want there to be secret areas that are hard to find, but offer large, difficult areas
+to explore.
+
+The castle will have many doors that can't be opened normally, but some may open on player
+death, creating a 'chaotic' element to the castle layout, and making players question if something else is going on. The doors that open on player death will only stay open until
+the next player death, so to keep the element of mystery present, even after becoming familiar
+with the castle layout. After each death the ambient lighting and/or lighting colour should
+change slightly, so that shadows are cast in a different direction, creating the illusion
+of a shifting or changing environment.
