@@ -81,6 +81,7 @@ namespace NoteOrganiser
                     selectedFileNameMemory = openTextFile.FileName;
                     openTextFile.FileName = FileNameMemory();
                     ReadNote(openTextFile.FileName);
+                    RtbNote.Focus();
                     TbStatus.Text = "Loaded";
                 }
                 catch
@@ -175,6 +176,17 @@ namespace NoteOrganiser
                 }
             }
         } // End of HotkeySave method.
+
+
+        // BtnNew method. This method is responsible for clearing the RtbNote richtextbox,
+        // and clearing the filepath for the HotkeySave method.
+        private void BtnNew_Click(object sender, EventArgs e)
+        {
+            RtbNote.Clear();
+            selectedFileNameMemory = "";
+            TbStatus.Text = "New Note!";
+            RtbNote.Focus();
+        } // End of BtnNew method.
 
 
     } // End of NoteOrganiser : Form class.

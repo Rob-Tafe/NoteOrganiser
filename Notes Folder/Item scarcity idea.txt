@@ -1,0 +1,30 @@
+Item scarcity idea
+
+The basic concept of this game is to somehow combine the soulslike genre with survival horror.
+However, the respawning resources of the soulslike genre clashes with the concept of finite
+resources that you usually find in survival horrors like Resident Evil.
+
+The idea is to limit how much the player can bring with them per 'outing' (when leaving a safe  area/bonfire). This would NOT include 'gear' items (armour, weapons, talismans/rings - anything
+that contributes to the character's core build). It would include things like consumables
+and optional tools, like food/drink items for buffs, 'grenade' type weapons, simple tools
+like a lightable/extinguishable lantern, or even weapon coatings (like grease/pine resin).
+
+I was thinking of limiting the quantity of these items per 'outing' to a total of six, like
+the inventory size of Signalis and the older Resident Evil games. Another aspect of this
+would be that the optional items would be lost on death - creating some anxiety in the player
+as whether or not they want to risk the resources they've brought with them. This system
+also would seem to require a 'storage box' of some kind at a safe area/bonfire, so that players
+can keep a stockpile of their favorite consumables/tools, as it is expected that they will
+go through a fair number of them, and having to aquire each item every time they want to
+use it will quickly become tedious and tiring.
+
+Now, to balance out this extreme item limit (when compared to other soulslikes) each item
+would have to be sufficiently useful/powerful, like buffs would likely have to last a fair
+while, or grenade weapons would have to do either a lot of damage, or have a very large aoe.
+
+Balancing the power of items in this system will be interesting (read: very difficult), but
+I think it will create an interesting choice for the players, in deciding what they need
+for a specific task, or whether they need to bring anything at all for something like a 'scouting
+run'. It will also create the desire to avoid death, thus avoid loosing your favorite
+consumables/tools, and feeding into the 'survival horror' aspect of this game (even if the 
+horror is in loosing something valuable, as opposed to 'traditional' sources of horror).

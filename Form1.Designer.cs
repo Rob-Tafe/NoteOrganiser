@@ -32,6 +32,7 @@
             this.BtnSave = new System.Windows.Forms.Button();
             this.RtbNote = new System.Windows.Forms.RichTextBox();
             this.TbStatus = new System.Windows.Forms.TextBox();
+            this.BtnNew = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnOpen
@@ -60,6 +61,7 @@
             // 
             // RtbNote
             // 
+            this.RtbNote.AcceptsTab = true;
             this.RtbNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -82,12 +84,23 @@
             this.TbStatus.Size = new System.Drawing.Size(100, 21);
             this.TbStatus.TabIndex = 5;
             // 
+            // BtnNew
+            // 
+            this.BtnNew.Location = new System.Drawing.Point(230, 10);
+            this.BtnNew.Name = "BtnNew";
+            this.BtnNew.Size = new System.Drawing.Size(80, 40);
+            this.BtnNew.TabIndex = 6;
+            this.BtnNew.Text = "New Note";
+            this.BtnNew.UseVisualStyleBackColor = true;
+            this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
+            // 
             // NoteOrganiser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(804, 611);
+            this.Controls.Add(this.BtnNew);
             this.Controls.Add(this.TbStatus);
             this.Controls.Add(this.RtbNote);
             this.Controls.Add(this.BtnSave);
@@ -107,6 +120,7 @@
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.RichTextBox RtbNote;
         private System.Windows.Forms.TextBox TbStatus;
+        private System.Windows.Forms.Button BtnNew;
     }
 }
 

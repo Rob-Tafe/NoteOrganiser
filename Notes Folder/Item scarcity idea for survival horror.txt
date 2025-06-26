@@ -1,0 +1,16 @@
+Item scarcity idea for survival horror focused medieval fantasy
+
+Weapons to have durability, and will break when durability runs out, but the player keeps
+the broken weapon, and can have it reforged with the right materials - this ensures that
+the player can keep access to their preferred weapon, but still has to deal with the enforced
+resource scarcity common in the survival horror genre.
+
+Perhaps something like 'Bluesteel shards' to repair a longsword, or 'Redsteel shards' to
+repair a bastard sword?
+
+As far as the tarot spell system is concerned, each suit can be a 'spellbook' type item.
+It could provide the player with access to all the spells in that specific suit, and all
+the resource cards too, but once all the resource cards are spent, the suit need to be recharged.
+The resource cards would loose their images/text if used to cast a spell, rendering them
+inert, and the player would have to reinscribe them with 'Magical Ink' in order to use them
+again.

@@ -1,0 +1,24 @@
+Weapon ideas
+
+
+Weapon: Longsword
+Name: Valiant
+Description: Sword with a two-handed grip and a long, slender blade made for thrusting and
+slashing. Made primarily for two-handed usage, it can also be used one handed.
+Inspiration: Oakshott Type XVIIIb, Valiant Armory's 'VA-144 Craftsman'.
+
+
+Weapon: Bastard sword
+Name: Stalwart
+Description: Sword with a hand-and-a-half grip, and a solid blade that is wide at the base,
+but tapers off to a wicked point. Made mostly for slashing, but is effective with thrusts
+also. Made to be as versatile as possible, it is ideal for one handed usage and performs
+acceptably when used two handed.
+Inspiration: Oakshott Type XVa, 'Bastard sword' by Maciej Kopciuch, 'The Mercenary' by Albion
+Swords.
+
+
+Weapon: 
+Name: 
+Description: 
+Inspiration: 
