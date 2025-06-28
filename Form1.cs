@@ -128,7 +128,6 @@ namespace NoteOrganiser
                 try
                 {
                     selectedFileNameMemory = saveTextFile.FileName;
-                    saveTextFile.FileName = FileNameMemory();
                     WriteNote(saveTextFile.FileName);
                 }
                 catch
