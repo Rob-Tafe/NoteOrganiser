@@ -28,7 +28,7 @@ namespace NoteOrganiser
 
 
         // Global variables.
-        string selectedFileNameMemory = "";
+        string selectedFileNameMemory = null;
 
         // End of Global variables.
 
@@ -103,11 +103,7 @@ namespace NoteOrganiser
             {
                 string fileName = FileNameMemory();
 
-                if (string.IsNullOrEmpty(fileName))
-                {
-                    fileName = "Note.txt";
-                }
-                writeFile.Write(rtbText, writeFilePath);
+                writeFile.Write(rtbText);
                 TbStatus.Text = "Saved";
             }
         } // End of WriteNote method.
@@ -128,11 +124,11 @@ namespace NoteOrganiser
                 try
                 {
                     selectedFileNameMemory = saveTextFile.FileName;
-                    WriteNote(saveTextFile.FileName);
+                    WriteNote(selectedFileNameMemory);
                 }
-                catch
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Error, unable to save file.", "Error (BtnSave_Click Method)");
+                    MessageBox.Show($"Error, unable to save file: {ex.Message}", "Error (BtnSave_Click Method)");
                     return;
                 }
             }

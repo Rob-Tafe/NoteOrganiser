@@ -13,7 +13,8 @@ to further the plot and help locate more significant items of value, solving puz
 defeating bosses.
 
 The general atmosphere or 'feel' of the castle is to be cold, dark and lonely. It should emphasise that the main character is on their own, and that this castle, which used to be
-inhabited (long ago? not so long ago?) is now devoid of (non-hostile) life.
+inhabited (long ago? not so long ago?) is now devoid of (non-hostile) life. I also want the
+feel of the game in general to be one of mystery and the blurring of reality and illusion.
 
 The intention is to have the castle be very large, not quite maze-like, but fairly difficult
 to traverse (at least initially). There should be shortcuts that can be unlocked to aid quick

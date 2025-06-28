@@ -16,3 +16,11 @@ player to keep pushing onwards).
 Memories - The equivelant to souls & runes. if the main character dies, they will drop them
 on the ground where they died.
 
+
+
+For a more Survival horror focus, death should reset the player's inventory, and the world
+should be reverted to, how it was the last time they visited a safe room. This is top preserve
+the item economy of the game (this is the non-soulslike option for handling death.). I still
+want to have the whole 'waking up' scene, so as to not bring gameplay to a grinding halt,
+and to create an in-lore explanation as to how the player character can somehow survive a
+fatal experience - it was 'just a bad dream' or an 'unexplained vision of the future'.

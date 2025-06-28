@@ -18,7 +18,9 @@ Inspiration: Oakshott Type XVa, 'Bastard sword' by Maciej Kopciuch, 'The Mercena
 Swords.
 
 
-Weapon: 
+Weapon: Mace
 Name: 
-Description: 
+Description: A solid shaft with a leather bound grip, and several flanges covering
+the head. Fairly light and nimble, it can deliver deceptively powerful blows to a small target
+area.
 Inspiration: 

@@ -1,0 +1,4 @@
+The Common Type System
+
+In the world of .NET, 'type' is a general term used to refer to a mamber of the set:
+{class, interface, structure, enumeration, delegate}.

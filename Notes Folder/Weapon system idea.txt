@@ -9,8 +9,7 @@ a swing might do more damage overall, a thrust may provide additional armour pen
 the attack, so you could vary how you attack an enemy based on the armour or percieved defenses.
 
 Environment may play a role when deciding which attack to use. For example, in a small, tight
-space you might not have the space required to reliably swing a weapon without hitting a wall or
-piece of furnature, and so a thrust may be a better option to attack reliably.
+space you might not have the space required to reliably swing a weapon without hitting a wall or piece of furniture, and so a thrust may be a better option to attack reliably.
 
 Different weapon types would have different attack options. For example, a mace might not
 have a thrust option, but would perhaps have an 'overhead swing' and an 'upwards swing', in
